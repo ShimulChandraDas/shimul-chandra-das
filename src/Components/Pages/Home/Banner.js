@@ -27,12 +27,21 @@ const Banner = () => {
             <div class="hero  bg-base-300">
 
                 <div class="hero-content flex-col lg:flex-row-reverse">
-                    <img src={Shimul} class="max-w-sm bg-slate-700 rounded-lg shadow-2xl" />
+
+                    {/* <img src={Shimul} class="max-w-sm bg-slate-700 rounded-lg shadow-2xl" />
+                     */}
+                    <div class="avatar">
+                        <div class="w-96 bg-slate-700 rounded-2xl">
+                            <img src={Shimul} alt='shimul' />
+                        </div>
+                    </div>
+
+
                     <div>
 
-                        <h1 className='text-3xl  font-bold'>Hi, I am</h1>
-                        <h1 class="text-5xl pb-5 uppercase font-bold">Shimul Chandra Das.</h1>
-                        <h1 className='text-4xl pb-5  font-bold'>
+                        <h1 className='text-2xl  font-bold'>Hi, This is</h1>
+                        <h1 class="text-4xl pb-5 uppercase font-bold">Shimul Chandra Das.</h1>
+                        <h1 className='text-3xl pb-4  font-bold'>
                             <TextTransition springConfig={presets.wobbly}>
                                 {texts[index % texts.length]}
                             </TextTransition>
@@ -45,7 +54,11 @@ const Banner = () => {
                             <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/shimulchandradas/" className='text-4xl mr-5'><FaLinkedin className='my-2' /></a>
                             <a target='_blank' rel="noreferrer" href="https://github.com/shimulchandradas" className='text-4xl'><FaGithubSquare className=' my-2 mr-5' /></a>
                         </div>
-                        <button class="btn btn-lg rounded-3xl btn-primary">My Resume</button>
+                        <div className=''>
+                            <a href='shimul-mern-web-developer.pdf' >
+                                <button class="btn btn-primary  btn-lg rounded-2xl ">My Resume</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

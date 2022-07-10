@@ -6,7 +6,7 @@ import Navbar from './Components/Shared/Navbar';
 
 function App() {
   return (
-    <div >
+    <div className=' bg-base-300' >
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />}></Route>

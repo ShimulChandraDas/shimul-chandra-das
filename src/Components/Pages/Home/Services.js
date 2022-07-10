@@ -4,7 +4,7 @@ const Services = () => {
     return (
         <div id='service' className="container mt-10 mx-auto px-3 md:px-0">
             <h4 className='font-bold text-3xl mb-10 text-center uppercase'>I can serve as a </h4>
-            <div className="rounded-lg bg-base-200">
+            <div className="rounded-lg ">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10">
                     <div className="block p-6 text-gray-300 rounded-lg shadow-md bg-gray-900 max-w-sm shadow-gray-300">
                         <img src="https://i.ibb.co/S0ZZ50z/19362653.jpg" alt="" />
