@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Components/Pages/Home/Home';
 import Footer from './Components/Shared/Footer';
 import Navbar from './Components/Shared/Navbar';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<Home />}></Route>
       </Routes>
       <Footer />
+      <ToastContainer />
     </div>
   );
 }

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import DetailsModal from './DetailsModal';
 import Project from './Project';
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
+    const [projectDetails, setProjectDetails] = useState(null)
 
     useEffect(() => {
         fetch('data.json')
@@ -17,10 +19,12 @@ const Projects = () => {
                 {
                     projects.map(project => <Project
                         key={project._id}
-                        project={project}>
-                    </Project>)
+                        project={project}
+                        setProjectDetails={setProjectDetails}
+                    ></Project>)
                 }
             </div>
+            {projectDetails && <DetailsModal projectDetails={projectDetails}></DetailsModal>}
             <div className='card-actions  justify-end'>
                 <button className='btn btn-primary btn-link font-bold text-2xl'>See More ------></button>
             </div>
