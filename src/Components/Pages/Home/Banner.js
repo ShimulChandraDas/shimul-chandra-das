@@ -24,14 +24,11 @@ const Banner = () => {
 
     return (
         <div>
-            <div class="hero  bg-base-300">
+            <div className="hero  bg-base-300">
 
-                <div class="hero-content flex-col lg:flex-row-reverse">
-
-                    {/* <img src={Shimul} class="max-w-sm bg-slate-700 rounded-lg shadow-2xl" />
-                     */}
-                    <div class="avatar">
-                        <div class="w-96 bg-slate-700 rounded-2xl">
+                <div className="hero-content flex-col lg:flex-row-reverse">
+                    <div className="avatar">
+                        <div className="w-96 bg-slate-700 rounded-2xl">
                             <img src={Shimul} alt='shimul' />
                         </div>
                     </div>
@@ -40,14 +37,14 @@ const Banner = () => {
                     <div>
 
                         <h1 className='text-2xl  font-bold'>Hi, This is</h1>
-                        <h1 class="text-4xl pb-5 uppercase font-bold">Shimul Chandra Das.</h1>
+                        <h1 className="text-4xl pb-5 uppercase font-bold">Shimul Chandra Das.</h1>
                         <h1 className='text-3xl pb-4  font-bold'>
                             <TextTransition springConfig={presets.wobbly}>
                                 {texts[index % texts.length]}
                             </TextTransition>
 
                         </h1>
-                        <p class="py-6 ">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <p className="py-6 ">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
 
                         <div className='flex  '>
                             <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/shimulchandradas/" className='text-4xl mr-5'><FaFacebookSquare className=' my-2' /></a>
@@ -56,7 +53,7 @@ const Banner = () => {
                         </div>
                         <div className=''>
                             <a href='shimul-mern-web-developer.pdf' >
-                                <button class="btn btn-primary  btn-lg rounded-2xl ">My Resume</button>
+                                <button className="btn btn-primary  btn-lg rounded-2xl ">My Resume</button>
                             </a>
                         </div>
                     </div>
